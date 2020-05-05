@@ -1,0 +1,64 @@
+@import '../../../../style/_variables.scss';
+@import '../../../../style/_mixins.scss';
+.testimonials{
+    @include responsiveSection;
+    background: $light;
+    padding: 100px;
+    display: flex;
+    flex-flow: column;
+
+    @media(max-width: 900px){
+        padding: $gutterOne;
+        padding-top: 0;
+    }
+    @media(max-width: 500px){
+        padding: $gutterTwo;
+    }
+    h1{
+        margin-bottom:20px 
+    }
+
+    h1::after{
+        @include afterTitle;
+    }
+    p{
+        padding: 40px 100px;
+        position: relative;
+        @media(max-width: 900px){
+            padding: 0;
+        }
+    }
+    .testimonialContainer{
+        position: relative;
+    }
+    .quoteLeft, .quoteRight{
+        position: absolute;
+        color: $primary-dark;
+        opacity: .04;
+        transform: scale(1.2)
+    }
+    .quoteLeft{
+        top:0;
+        left:30px;
+        @media(max-width: 900px){
+            left:-10px;
+        }
+    }
+    .quoteRight{
+        bottom:0;
+        right: 40px;
+        @media(max-width: 900px){
+            right:-10px;
+        }
+    }
+}
+
+.navigation{
+    padding-top: 40px;
+    align-self: center;
+    display: flex;
+    width: 50px;
+    justify-content: space-between;
+   
+}
+

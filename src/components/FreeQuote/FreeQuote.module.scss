@@ -1,0 +1,22 @@
+@import '../../style/_variables.scss';
+
+.freeQuote{
+    position: fixed;
+    top:0;
+    right: 0;
+    cursor: pointer;
+    background: $primary-dark;
+    height: 70px;
+    width: 180px;
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $secondary;
+    font-weight: bold;
+    cursor: pointer;
+    @media(max-width: 1260px){
+        display: none;
+    }
+}
+

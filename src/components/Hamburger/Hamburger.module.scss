@@ -1,0 +1,62 @@
+@import '../../style/_variables.scss';
+.hamburger{
+    background: $primary-dark;
+  
+   height: 80px;
+   width: 80px;
+   display: flex;
+   align-items: center;
+   justify-content:center;
+   cursor: pointer;
+   transition: all .5s ease-in-out;
+   position: relative;
+   transform: scale(.6);
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 3000;
+   @media(min-width: 1260px){
+       display: none;
+   }
+}
+
+@mixin hamburgerLine{
+    height: 6px;
+    border-radius: 5px;
+    width: 50px;
+    transition: all 1s ease;
+    background: $secondary;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.middleLine{
+    @include hamburgerLine;
+    &::before{
+    @include hamburgerLine;
+        content: '';
+        transform: translateY(-16px);
+        position: absolute;
+    }
+    &::after{
+        @include hamburgerLine;
+        content: '';
+        position: absolute;
+        transform: translateY(16px);
+    }
+}
+
+.open{
+    .middleLine{
+        transform:translateX(-50px);
+        background: transparent;
+        &::before{
+        @include hamburgerLine;
+           transform: rotate(45deg)translate(35px, -35px)
+        }
+        &::after{
+            @include hamburgerLine;
+            transform: rotate(-45deg)translate(35px, 35px)
+            
+        }
+    }
+}

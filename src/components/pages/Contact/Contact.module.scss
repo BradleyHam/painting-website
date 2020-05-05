@@ -1,0 +1,75 @@
+@import '../../../style/_variables.scss';
+@import '../../../style/mixins.scss';
+.Contact{
+   @include responsiveSection;
+    background:$light;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-flow: column; 
+    h1{
+        font-size: 30px;
+        &::after{
+         @include afterTitle;
+        } 
+     }
+
+     strong{
+         font-style: italic;
+         opacity: 1;
+     }
+     p{
+        padding:  20px;
+     }
+}
+
+
+.form{
+    background: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+    border-radius: 5px;
+    padding: 40px;
+    width: 40vw;
+    input, textarea{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        border: 1px solid rgba(0, 0, 0, 0.096);
+        margin: 10px 0;
+    }
+    textarea{
+        min-height: 100px;
+    }
+    button{
+        padding:7px 12px;
+        border-radius: 5px;
+        background: $secondary;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    @media(max-width: 1000px){
+        width: 60vw;
+    }
+    @media(max-width: 800px){
+        width: 80vw;
+    }
+    @media(max-width: 500px){
+        width: 90vw;
+    }
+
+}
+
+
+.error {
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    padding: 0!important;
+    margin-left: 10px;
+    transform: translateY(-5px)
+}

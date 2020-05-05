@@ -1,0 +1,15 @@
+@import '../../../style/_mixins.scss';
+.about{
+    @include responsiveSection;
+    padding: 50px;
+    min-height: 80vh;
+ 
+}
+
+.title{
+    &::after{
+          @include afterTitle;
+    }
+  
+}
+

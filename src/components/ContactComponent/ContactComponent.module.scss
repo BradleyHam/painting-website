@@ -1,0 +1,89 @@
+@import '../../style/_variables.scss';
+@import '../../style/_mixins.scss';
+
+.contact{
+    @include responsiveSection;
+    background: $primary-dark;
+     padding: 30px;
+     color: white;
+     display: flex;
+    height: 45vh;
+   
+}
+
+.details{
+    flex: 1;
+    @media(max-width: 900px){
+        flex: 2; 
+    }
+ 
+   button{
+       background: $primary-dark;
+       color: $secondary;
+       border: none;
+       cursor: pointer;
+       font-size: 13px;
+   }
+   h3{
+    color: $light;
+    &::after{
+        @include afterTitle;
+    }
+}
+}
+
+.services{
+    flex: 1;
+  
+    h3{
+        color: $light;
+        &::after{
+            @include afterTitle;
+        }
+    }
+}
+
+.map{
+    flex: 2;
+    position: relative;
+    @media(max-width: 1000px){
+        display: none;
+    }
+    
+}
+
+
+.icon{
+    margin-right: 5px;
+    color: $secondary;
+   
+} 
+.arrowIcon{
+    margin-left: 5px;
+}
+
+.email, .phone{
+    font-size: 14px;
+    opacity: .7;
+  
+}
+
+.freeQuote{
+    font-size: 12px;
+    font-weight: bold;
+    button{
+        background: $primary-dark;
+        color: $secondary;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+
+li{
+    opacity: .7;
+    font-size: 14px;
+}
+

@@ -1,0 +1,11 @@
+@import '../../style/_variables.scss';
+.icon{
+    margin: 1px;
+    color: white;
+    padding: 6px;
+    &:hover{
+        color: $secondary;
+        cursor: pointer;
+        transform: scale(1.15)
+    }
+}

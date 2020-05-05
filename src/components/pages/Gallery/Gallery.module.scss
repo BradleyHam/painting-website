@@ -1,0 +1,29 @@
+@import '../../../style/_variables.scss';
+.Gallery{
+    margin-left: $navSize;
+    width: calc(100vw - #{navSize});
+    height: 100vh;
+    .GalleryGrid{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        padding: 20px;
+        grid-gap: 10px;
+    }
+}
+
+.One{
+    background: green;
+    grid-column: span 3;
+    grid-row: span 3;
+}
+.Two{
+    background: green;
+    grid-column: span 5;
+    grid-row: span 6;
+}
+.Three{
+    background: green;
+    grid-column: span 4;
+    grid-row: span 4;
+}

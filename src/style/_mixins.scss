@@ -1,0 +1,18 @@
+@import './_variables.scss';
+@mixin afterTitle{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 40px;
+    background: $secondary;
+    margin: 5px 0;
+}
+@mixin responsiveSection{
+    margin-left: $navSize;
+    width: calc(100vw - #{navSize});
+    @media(max-width: 1260px){
+        width: 100vw;
+        margin-left: 0;
+    }
+}
+

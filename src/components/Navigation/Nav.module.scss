@@ -1,0 +1,68 @@
+@import '../../style/_variables.scss';
+
+.header{
+    position: fixed;
+    left: 0;
+    top:0;
+    bottom: 0;
+    background: $primary-dark;
+    width: 20vw;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-flow: column;
+   padding: 20px 0;
+   z-index: 2000;
+}
+
+.logo{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: 'Prata';
+    padding-top: 10px;
+    font-size: 19px;
+    h4{
+        color: $secondary;
+        font-size: 21px;
+        font-weight: bold;
+    }
+    color: white;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-flow: column;
+    
+    a{
+        margin: 10px 0;
+        position: relative;
+        color: $text-light;
+
+    }
+    a:hover::after{
+        content: '';
+        position: absolute;
+        display: block;
+        background: $secondary;
+        height: 1px;
+        width: 100%;
+        margin-top: 3px;
+    }
+}
+
+@media(max-width: 1260px){
+    .header{
+        width: 100vw;
+        transition: all .5s ease-in-out;
+    }
+    .closed{
+        transform: translateX(-100%);
+    }
+    .open{
+        transform: translateX(0);
+    }
+   }

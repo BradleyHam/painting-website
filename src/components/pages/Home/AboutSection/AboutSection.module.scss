@@ -1,0 +1,128 @@
+@import '../../../../style/_variables.scss';
+@import '../../../../style/mixins.scss';
+.About{
+    @include responsiveSection;
+    display: flex; 
+    background: $light;
+    padding: 100px;
+    @media(max-width: 900px){
+       padding: 0;
+        
+    }
+}
+
+.left{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(max-width: 900px){
+        height: initial;
+        display: none;
+        
+    }
+
+    .imageContainer{
+      background: $secondary;
+      position: relative;
+     height: 590px;
+     width: 390px;
+    @media(max-width: 900px){
+        height: 490px;
+        width: 290px;
+    }
+    }
+ 
+    img{
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        @media(max-width: 500px){ 
+        }
+    }
+}
+
+
+
+.right{
+ 
+    padding-right: 70px;
+    flex: 1;
+    p{
+        padding: 50px 0 ;
+        
+    }
+    h1::after{
+       @include afterTitle;
+    }
+    @media(max-width: 900px){
+        padding: $gutterOne;
+    }
+    @media(max-width: 500px){
+        padding: $gutterTwo;
+    }
+    
+}
+.iconRow{
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+    position: relative;
+    &::after{
+        content: '';
+        height: 2px;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-3px);
+        background: $primary-dark;
+        position: absolute;
+        z-index: 0;
+        opacity: .3;
+    }
+    h2{
+        border: 1px solid rgba(0, 0, 0, 0.253);
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        z-index: 2;
+        background:$light;
+        color: rgba(0, 0, 0, 0.637);
+        position: relative;
+    }
+}
+
+@mixin afterNumber{
+    position: absolute;
+    bottom: -40px;
+    color:$secondary;
+    font-size: 20px;
+    left: 5px;
+}
+@mixin responseAfter{
+    @media(max-width: 450px){
+        font-size: 16px;
+    }
+}
+.honest{
+    @include afterNumber;
+    @include responseAfter;
+   
+}
+.clean{
+    @include afterNumber;
+    @include responseAfter;
+   
+}
+.reliable{
+    @include afterNumber;
+    @include responseAfter;
+  
+}
