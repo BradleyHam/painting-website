@@ -9,7 +9,7 @@
 }
 @mixin responsiveSection{
     margin-left: $navSize;
-    width: calc(100vw - #{navSize});
+    width: calc(100vw - 80vw);
     @media(max-width: 1260px){
         width: 100vw;
         margin-left: 0;

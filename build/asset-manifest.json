@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/painting-website/static/css/main.1708e9be.chunk.css",
+    "main.js": "/painting-website/static/js/main.5d61d00c.chunk.js",
+    "main.js.map": "/painting-website/static/js/main.5d61d00c.chunk.js.map",
+    "runtime-main.js": "/painting-website/static/js/runtime-main.cbb30346.js",
+    "runtime-main.js.map": "/painting-website/static/js/runtime-main.cbb30346.js.map",
+    "static/js/2.457083fc.chunk.js": "/painting-website/static/js/2.457083fc.chunk.js",
+    "static/js/2.457083fc.chunk.js.map": "/painting-website/static/js/2.457083fc.chunk.js.map",
+    "index.html": "/painting-website/index.html",
+    "precache-manifest.cccc8f5d14b1ef7b5ebcedc5b0ecb612.js": "/painting-website/precache-manifest.cccc8f5d14b1ef7b5ebcedc5b0ecb612.js",
+    "service-worker.js": "/painting-website/service-worker.js",
+    "static/css/main.1708e9be.chunk.css.map": "/painting-website/static/css/main.1708e9be.chunk.css.map",
+    "static/js/2.457083fc.chunk.js.LICENSE.txt": "/painting-website/static/js/2.457083fc.chunk.js.LICENSE.txt",
+    "static/media/Hero.module.scss": "/painting-website/static/media/five.fab323c9.jpg",
+    "static/media/HomeGallery.module.scss": "/painting-website/static/media/houseTwo.f161e738.jpg",
+    "static/media/painter-2751665_1280.jpg": "/painting-website/static/media/painter-2751665_1280.46183f49.jpg",
+    "static/media/partnership.png": "/painting-website/static/media/partnership.2d64a6b2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cbb30346.js",
+    "static/js/2.457083fc.chunk.js",
+    "static/css/main.1708e9be.chunk.css",
+    "static/js/main.5d61d00c.chunk.js"
+  ]
+}
